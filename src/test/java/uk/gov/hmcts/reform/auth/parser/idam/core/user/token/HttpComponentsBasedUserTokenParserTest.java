@@ -24,7 +24,6 @@ public class HttpComponentsBasedUserTokenParserTest {
 
     private HttpComponentsBasedUserTokenParser client;
 
-//    bad
     @Before
     public void setUp() throws Exception {
         client = new HttpComponentsBasedUserTokenParser(

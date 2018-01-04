@@ -27,7 +27,6 @@ import uk.gov.hmcts.reform.auth.parser.idam.core.service.token.ServiceTokenParse
 
 @Lazy
 @Configuration
-
 public class AuthCheckerConfiguration {
 
     @Bean

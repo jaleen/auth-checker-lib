@@ -25,7 +25,6 @@ public class HttpComponentsBasedServiceTokenParserTest {
         );
     }
 
-//    bad
     @Test
     public void happyPath() {
         stubFor(
@@ -40,7 +39,6 @@ public class HttpComponentsBasedServiceTokenParserTest {
         assertThat(subject).isEqualTo("subject");
     }
 
-//    bad
     @Test
     public void bearerShouldNotBePrependedIfItsAlreadyPresent() {
         stubFor(
@@ -55,7 +53,6 @@ public class HttpComponentsBasedServiceTokenParserTest {
         assertThat(subject).isEqualTo("subject");
     }
 
-//    Bad
     @Test(expected = ServiceTokenParsingException.class)
     public void non2xxResponseShouldResultInException() {
         stubFor(
@@ -68,7 +65,6 @@ public class HttpComponentsBasedServiceTokenParserTest {
         client.parse("someJwt");
     }
 
-//    Bad
     @Test(expected = ServiceTokenInvalidException.class)
     public void response401ShouldResultInServiceTokenInvalidException() {
         stubFor(

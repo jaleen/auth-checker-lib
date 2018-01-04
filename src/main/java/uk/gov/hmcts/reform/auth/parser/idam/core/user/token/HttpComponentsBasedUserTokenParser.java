@@ -13,7 +13,6 @@ public class HttpComponentsBasedUserTokenParser implements UserTokenParser {
 
     private final HttpClient httpClient;
     private final String baseUrl;
-//bad
     private final ObjectMapper objectMapper = new ObjectMapper();
 
     public HttpComponentsBasedUserTokenParser(HttpClient httpClient, String baseUrl) {
